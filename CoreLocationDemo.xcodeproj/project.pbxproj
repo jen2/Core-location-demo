@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4B1E14221D1715F900758744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E14211D1715F900758744 /* main.m */; };
 		4B1E14251D1715F900758744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E14241D1715F900758744 /* AppDelegate.m */; };
-		4B1E14281D1715F900758744 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E14271D1715F900758744 /* ViewController.m */; };
 		4B1E142B1D1715F900758744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E14291D1715F900758744 /* Main.storyboard */; };
 		4B1E142D1D1715F900758744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E142C1D1715F900758744 /* Assets.xcassets */; };
 		4B1E14301D1715F900758744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E142E1D1715F900758744 /* LaunchScreen.storyboard */; };
+		4B1E14391D173DB900758744 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E14381D173DB900758744 /* LocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		4B1E14211D1715F900758744 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B1E14231D1715F900758744 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B1E14241D1715F900758744 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B1E14261D1715F900758744 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B1E14271D1715F900758744 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4B1E142A1D1715F900758744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B1E142C1D1715F900758744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1E142F1D1715F900758744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1E14311D1715F900758744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1E14371D173DB900758744 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		4B1E14381D173DB900758744 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				4B1E14231D1715F900758744 /* AppDelegate.h */,
 				4B1E14241D1715F900758744 /* AppDelegate.m */,
-				4B1E14261D1715F900758744 /* ViewController.h */,
-				4B1E14271D1715F900758744 /* ViewController.m */,
+				4B1E14371D173DB900758744 /* LocationViewController.h */,
+				4B1E14381D173DB900758744 /* LocationViewController.m */,
 				4B1E14291D1715F900758744 /* Main.storyboard */,
 				4B1E142C1D1715F900758744 /* Assets.xcassets */,
 				4B1E142E1D1715F900758744 /* LaunchScreen.storyboard */,
@@ -149,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1E14281D1715F900758744 /* ViewController.m in Sources */,
 				4B1E14251D1715F900758744 /* AppDelegate.m in Sources */,
+				4B1E14391D173DB900758744 /* LocationViewController.m in Sources */,
 				4B1E14221D1715F900758744 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
