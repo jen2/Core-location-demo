@@ -11,23 +11,16 @@
 @interface LocationViewController ()
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) CLLocation *location;
 
 @end
 
 @implementation LocationViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
 
 - (IBAction)getLocationButtonTapped:(UIButton *)sender
 {
     if ([CLLocationManager locationServicesEnabled]) {
         self.locationManager = [[CLLocationManager alloc] init];
-        self.location = [[CLLocation alloc] init];
-        
         self.locationManager.delegate = self;
         
         if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
