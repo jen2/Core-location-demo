@@ -16,7 +16,6 @@
 
 @implementation LocationViewController
 
-
 - (IBAction)getLocationButtonTapped:(UIButton *)sender
 {
     if ([CLLocationManager locationServicesEnabled]) {
@@ -33,10 +32,13 @@
         [self.locationManager startUpdatingLocation];
         
     } else {
+        UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Location services are not enabled" message:[NSString stringWithFormat:@"Enable location services and try again"] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+        [errorAlert addAction:okAction];
+        [self presentViewController:errorAlert animated:YES completion:nil];
         NSLog(@"Location services are not enabled");
     }
 }
-
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
@@ -46,6 +48,5 @@
     [self.locationManager stopUpdatingLocation];
     self.locationManager = nil;
 }
-
 
 @end
